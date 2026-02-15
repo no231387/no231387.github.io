@@ -2,29 +2,127 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VDI Lab — Proxmox</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+      color: #222;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 0;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 25px 0;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0056b3;
+      font-size: 0.9rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 6px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-top: 8px;
+    }
+
+    .project-images {
+      margin-bottom: 25px;
+    }
+
+    .project-images img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      border-top: 1px solid #e0e0e0;
+      background: #ffffff;
+      font-size: 0.85rem;
+    }
+
+    @media (min-width: 1024px) {
+      header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header h1 {
+        font-size: 2.1rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
+
 <header>
-  <h1>Virtual Desktop Infrastructure (VDI) Lab — Proxmox</h1>
-  <nav>
-    <a href="index.html">Back to Resume</a>
-  </nav>
+  <div class="container">
+    <h1>Virtual Desktop Infrastructure (VDI) Lab — Proxmox</h1>
+    <nav>
+      <a href="index.html">Back to Resume</a>
+    </nav>
+  </div>
 </header>
 
-<main>
+<main class="container">
   <article>
-    <img src="proxmox1.png" alt="Proxmox Windows 11 virtual machine" width="600">
-    <img src="proxmox2.png" alt="Proxmox Ubuntu Linux virtual machine" width="600">
+
+    <div class="project-images">
+      <img src="proxmox1.png" alt="Proxmox Windows 11 virtual machine">
+      <img src="proxmox2.png" alt="Proxmox Ubuntu Linux virtual machine">
+    </div>
 
     <section>
       <h2>Project Description</h2>
       <p>
-        Designed and deployed a Virtual Desktop Infrastructure environment using Proxmox VE as a
-        bare-metal hypervisor. Built and managed multiple virtual machines, including Windows 11
-        Enterprise and Ubuntu Linux desktop. Configured bridged networking to integrate virtual
-        machines with the physical local network.
+        Designed and deployed a Virtual Desktop Infrastructure environment using
+        Proxmox VE as a bare-metal hypervisor. Built and managed multiple
+        virtual machines including Windows 11 Enterprise and Ubuntu Linux.
+        Configured bridged networking to integrate virtual machines
+        with the physical local network.
       </p>
     </section>
 
@@ -38,10 +136,13 @@
         <li>System performance tuning</li>
       </ul>
     </section>
+
   </article>
 </main>
 
 <footer>
+  © 2026 Noah Thomas
 </footer>
+
 </body>
 </html>
