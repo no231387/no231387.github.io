@@ -2,26 +2,134 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Noah Thomas – Resume</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+      color: #222;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 0;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 0.9rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0056b3;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    h3 {
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-top: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      border-top: 1px solid #e0e0e0;
+      background: #ffffff;
+      font-size: 0.85rem;
+    }
+
+    /* ================= DESKTOP ================= */
+    @media (min-width: 1024px) {
+
+      header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 60px;
+      }
+
+      section:nth-child(1),
+      section:nth-child(2),
+      section:nth-child(3) {
+        grid-column: 1;
+      }
+
+      section:nth-child(4),
+      section:nth-child(5) {
+        grid-column: 2;
+      }
+
+    }
+  </style>
 </head>
 
 <body>
+
 <header>
-  <h1>Noah Thomas</h1>
-  <p>
-    UCF Email: no231387@ucf.edu |
-    <a href="https://www.linkedin.com/in/noah-thomas-b82591179/" target="_blank">LinkedIn</a>
-  </p>
+  <div class="container">
+    <h1>Noah Thomas</h1>
+    <p>
+      UCF Email: no231387@ucf.edu |
+      <a href="https://www.linkedin.com/in/noah-thomas-b82591179/" target="_blank">LinkedIn</a>
+    </p>
+  </div>
 </header>
 
-<main>
+<main class="container">
+
   <section>
     <h2>Professional Objective</h2>
     <p>
-      Information Technology student specializing in Virtual Desktop Infrastructure, Cybersecurity,
-      and Network Infrastructure. Strong technical foundation in virtualization, secure networking
-      principles, SQL, C, and Java. Known for leadership, reliability, and effective problem-solving
-      in fast-paced environments. Seeking an IT internship focused on virtualization, cyber defense,
+      Information Technology student specializing in Virtual Desktop Infrastructure,
+      Cybersecurity, and Network Infrastructure. Strong technical foundation in
+      virtualization, secure networking principles, SQL, C, and Java.
+      Seeking an IT internship focused on virtualization, cyber defense,
       or network systems operations.
     </p>
   </section>
@@ -41,18 +149,18 @@
     <article>
       <h3>Shift Manager — Jeremiah’s Italian Ice</h3>
       <ul>
-        <li>Supervised and coordinated a team of 8–12 employees per shift, improving workflow efficiency by up to 25%</li>
-        <li>Ensured operational accuracy and accountability while maintaining a structured environment</li>
-        <li>Strengthened leadership, communication, and problem-solving skills in high-demand situations</li>
+        <li>Supervised and coordinated 8–12 employees per shift</li>
+        <li>Maintained operational accuracy and accountability</li>
+        <li>Strengthened leadership and problem-solving skills</li>
       </ul>
     </article>
 
     <article>
       <h3>Summer Bridge Tutor — Pinellas County Schools</h3>
       <ul>
-        <li>Supported 20+ students in structured learning environments, reinforcing academic and technology skills</li>
-        <li>Communicated technical concepts clearly to learners of different knowledge levels</li>
-        <li>Contributed to program organization and consistency, helping improve student success readiness</li>
+        <li>Supported 20+ students in structured learning environments</li>
+        <li>Explained technical concepts clearly</li>
+        <li>Improved student engagement and readiness</li>
       </ul>
     </article>
   </section>
@@ -61,23 +169,26 @@
     <h2>Projects</h2>
     <ul>
       <li><a href="proxmox.html">Virtual Desktop Infrastructure (VDI) Lab — Proxmox</a></li>
-      <li><a href="virtualbox.html">Virtual Networking & System Administration Lab — Oracle VirtualBox</a></li>
+      <li><a href="virtualbox.html">Virtual Networking & System Administration Lab — VirtualBox</a></li>
     </ul>
   </section>
 
   <section>
     <h2>Skills</h2>
     <ul>
-      <li>Virtualization & Cloud: Virtual Desktop Infrastructure concepts, Azure Fundamentals, AWS Cloud Security</li>
-      <li>Networking: TCP/IP, Routing & Switching Concepts, Secure Network Practices</li>
-      <li>Cybersecurity: Cyber Defense Foundations, Risk Awareness, Access Control Principles</li>
-      <li>Programming & Data: Java, C, SQL</li>
-      <li>Tools: Git, Windows Systems Administration</li>
+      <li>Virtualization & Cloud</li>
+      <li>Networking</li>
+      <li>Cybersecurity</li>
+      <li>Java, C, SQL</li>
+      <li>Git & Windows Administration</li>
     </ul>
   </section>
+
 </main>
 
 <footer>
+  © 2026 Noah Thomas
 </footer>
+
 </body>
 </html>
