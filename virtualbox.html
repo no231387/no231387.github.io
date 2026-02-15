@@ -2,46 +2,146 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Virtual Networking Lab — VirtualBox</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+      color: #222;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 0;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 25px 0;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0056b3;
+      font-size: 0.9rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 6px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-top: 8px;
+    }
+
+    .project-images {
+      margin-bottom: 25px;
+    }
+
+    .project-images img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      border-top: 1px solid #e0e0e0;
+      background: #ffffff;
+      font-size: 0.85rem;
+    }
+
+    @media (min-width: 1024px) {
+      header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header h1 {
+        font-size: 2.1rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
+
 <header>
-  <h1>Virtual Networking & System Administration Lab — Oracle VirtualBox</h1>
-  <nav>
-    <a href="index.html">Back to Resume</a>
-  </nav>
+  <div class="container">
+    <h1>Virtual Networking & System Administration Lab — VirtualBox</h1>
+    <nav>
+      <a href="index.html">Back to Resume</a>
+    </nav>
+  </div>
 </header>
 
-<main>
+<main class="container">
   <article>
-    <img src="vbox1.png" alt="VirtualBox Windows Server local server view" width="600">
-    <img src="vbox2.png" alt="VirtualBox network connectivity testing" width="600">
+
+    <div class="project-images">
+      <img src="vbox1.png" alt="VirtualBox Windows Server local server view">
+      <img src="vbox2.png" alt="VirtualBox network connectivity testing">
+    </div>
 
     <section>
       <h2>Project Description</h2>
       <p>
-        Completed as part of COP 4603 – System Administration and Maintenance, this project involved
-        setting up a local virtual network using Oracle VirtualBox. Multiple virtual machines were
-        configured to communicate through different network modes, simulating real-world system
-        administration and networking environments.
+        Completed as part of system administration coursework, this project
+        involved configuring multiple virtual machines in Oracle VirtualBox.
+        Different networking modes were used to simulate real-world
+        infrastructure and administrative environments.
       </p>
     </section>
 
     <section>
       <h2>Skills Learned</h2>
       <ul>
-        <li>Oracle VirtualBox configuration</li>
-        <li>Virtual networking (NAT, host-only, internal)</li>
+        <li>VirtualBox configuration</li>
+        <li>NAT, host-only, and internal networking</li>
         <li>Windows Server administration basics</li>
-        <li>System configuration and troubleshooting</li>
+        <li>System troubleshooting</li>
         <li>Network connectivity testing</li>
       </ul>
     </section>
+
   </article>
 </main>
 
 <footer>
+  © 2026 Noah Thomas
 </footer>
+
 </body>
 </html>
